@@ -8,11 +8,32 @@
              margin-right: auto;
            }
        </style>
+       <link href="./lib/main.css" rel="stylesheet" />
    </head>
    <body style="background-color:#1565c0;">
        <script src="./lib/microapp.js"></script>
        <script>sayHello()</script>
        <img src="logo.png" style="width:72px;"/>
-       <h1>wow!</h1>
+
+       <main>
+           <div id="accordion">
+                <button class="accordion">Section 1</button>
+                <div class="panel">
+                    <p>Lorem ipsum...</p>
+                </div>
+
+                <button class="accordion">Section 2</button>
+                <div class="panel">
+                    <p>Lorem ipsum...</p>
+                </div>
+
+                <button class="accordion">Section 3</button>
+                <div class="panel">
+                    <p>Lorem ipsum...</p>
+                </div> 
+           </div>
+       </main>
+
+       <script>getAccordion()</script>
    </body>
 </html>
